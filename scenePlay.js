@@ -127,10 +127,10 @@ var scenePlay = new Phaser.Class({
                 var halanganBaru = this.add.image(1500, acak_y, 'obstc');
                 halanganBaru.setOrigin(0, 0);
                 halanganBaru.setData("status_aktif",true);
-                halanganBaru.setData("kecepatan",Math.floor((Math.random() * 15) + 10));
+                halanganBaru.setData("kecepatan",Math.floor((Math.random() * 10) + 5));
                 halanganBaru.setDepth(5);
                 this.halangan.push(halanganBaru);
-                this.timerHalangan = Math.floor((Math.random() * 50) + 10);
+                this.timerHalangan = Math.floor((Math.random() * 100) + 50);
             }
 
             //hapus halangan yg gperlu
